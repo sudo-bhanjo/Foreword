@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+body {
+    overflow-x: hidden;
+}
+
+/* Global custom scrollbar styles */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #e0f2ff;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #e0f2ff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #3b82f6;
+    border-radius: 8px;
+    border: 2px solid #e0f2ff;
+}
