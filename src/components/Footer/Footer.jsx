@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
     FaFacebookF,
     FaTwitter,
-    FaBehance,
+    FaLinkedinIn,
     FaInstagram,
     FaYoutube,
     FaEnvelope,
@@ -46,38 +46,47 @@ const Footer = () => {
 
                     <h4 className="text-md font-bold mt-6 mb-2 text-[#0a0d3b]">Follow us</h4>
                     <div className="flex gap-3">
-                        {[FaFacebookF, FaTwitter, FaBehance, FaInstagram, FaYoutube].map((Icon, i) => (
-                            <div
-                                key={i}
-                                className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition hover:cursor-pointer"
-                            >
-                                <Icon size={14} />
-                            </div>
-                        ))}
+                        <a href="https://www.facebook.com/people/Foreword-School-of-Soft-Skills/100063752177327" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                            <FaFacebookF size={14} />
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                            <FaTwitter size={14} />
+                        </a>
+                        <a href="https://www.linkedin.com/company/forewordarc" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                            <FaLinkedinIn size={14} />
+                        </a>
+                        <a href="https://www.instagram.com/foreword.softskills" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                            <FaInstagram size={14} />
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                            <FaYoutube size={14} />
+                        </a>
                     </div>
                 </div>
 
                 {/* About */}
                 <div>
-                    <h4 className="font-bold text-[#0a0d3b] mb-4">About Us</h4>
+                    <h4 className="font-bold text-[#0a0d3b] mb-4">Resources</h4>
                     <ul className="space-y-2 text-sm">
-                        {['About Us', 'Courses', 'Events', 'Profile', 'Contact'].map((item, i) => (
-                            <li key={i} className="hover:underline cursor-pointer">{item}</li>
-                        ))}
+                        <li><a href="#" className="hover:underline">Home</a></li>
+                        <li><a href="#about" className="hover:underline">About us</a></li>
+                        <li><a href="#methodology" className="hover:underline">Methodology</a></li>
+                        <li><a href="#partner" className="hover:underline">Partner</a></li>
+                        <li><a href="#testimonials" className="hover:underline">Testimonials</a></li>
                     </ul>
                 </div>
 
                 {/* Resources */}
                 <div>
-                    <h4 className="font-bold text-[#0a0d3b] mb-4">Resources</h4>
+                    <h4 className="font-bold text-[#0a0d3b] mb-4">About us</h4>
                     <ul className="space-y-2 text-sm">
                         {['Support Center', 'Affiliate', 'Careers', 'Sitemap', 'Help Center'].map((item, i) => (
-                            <li key={i} className="hover:underline cursor-pointer">{item}</li>
+                            <li key={i} className="hover:underline cursor-pointer"><a href="#">{item}</a></li>
                         ))}
                     </ul>
                 </div>
 
-                {/* Contact (moved here) */}
+                {/* Contact */}
                 <div>
                     <h4 className="font-bold text-[#0a0d3b] mb-4">Contact</h4>
                     <div className="space-y-3 text-sm">
