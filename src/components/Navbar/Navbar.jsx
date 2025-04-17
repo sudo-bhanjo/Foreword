@@ -26,7 +26,7 @@ const Navbar = () => {
                         <a href="#about">About Us</a>
                     </li>
                     <li className="cursor-pointer hover:text-blue-600">
-                        <a href="#methodology">Methodology</a>
+                        <a href="#programs">Programs</a>
                     </li>
                     <li className="cursor-pointer hover:text-blue-600">
                         <a href="#partner">Partner</a>
@@ -76,7 +76,7 @@ const Navbar = () => {
                             <a href="#about">About Us</a>
                         </li>
                         <li className="cursor-pointer" onClick={handleMenuItemClick}>
-                            <a href="#methodology">Methodology</a>
+                            <a href="#programs">Programs</a>
                         </li>
                         <li className="cursor-pointer" onClick={handleMenuItemClick}>
                             <a href="#partner">Partner</a>

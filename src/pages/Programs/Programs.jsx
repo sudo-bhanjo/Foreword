@@ -33,7 +33,7 @@ const topics = [
 
 const Programs = () => {
     return (
-        <div>
+        <div id='programs'>
             <section className="py-36 px-4 md:px-12 lg:px-24 text-center bg-white text-gray-800">
                 <p className="text-blue-600 font-semibold mb-2 text-sm">Browse Categories</p>
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-10">Our Programs</h2>

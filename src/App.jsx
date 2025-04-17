@@ -7,6 +7,7 @@ import Home from './pages/Home/Home'
 import Programs from './pages/Programs/Programs'
 // import Methodology from './pages/methodology/Methodology'
 import Testimonials from './pages/Testimonials/Testimonials'
+import Section from './pages/Sections/Sections'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <AboutFounder />
       {/* <Methodology /> */}
       <Programs />
+      <Section />
       <LogoCarousel />
       <Testimonials />
       <Footer />
