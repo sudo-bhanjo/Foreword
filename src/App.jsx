@@ -8,6 +8,7 @@ import Programs from './pages/Programs/Programs'
 // import Methodology from './pages/methodology/Methodology'
 import Testimonials from './pages/Testimonials/Testimonials'
 import Section from './pages/Sections/Sections'
+import About from './pages/About/About'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <About />
       <AboutFounder />
       {/* <Methodology /> */}
       <Programs />
