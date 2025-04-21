@@ -227,7 +227,7 @@ const HeroSection = () => {
                 {/* Right Side Carousel */}
                 <div
                     ref={containerRef}
-                    className="w-full md:w-1/2 h-[300px] md:h-[500px] overflow-hidden rounded-xl shadow-lg"
+                    className="w-1/2 h-[300px] md:h-[500px] overflow-hidden rounded-xl"
                 >
                     <div className="flex flex-col" style={{ height: `${images.length * 100}%` }}>
                         {images.map((img, i) => (

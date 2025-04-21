@@ -64,6 +64,7 @@
 // export default DropdownCards;
 
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const cardData = {
     "One on One": [
@@ -79,7 +80,7 @@ const cardData = {
 };
 
 const DropdownCards = () => {
-    const [openTab, setOpenTab] = useState(null);
+    const [openTab, setOpenTab] = useState("One on One");
 
     const toggleTab = (tab) => {
         setOpenTab((prev) => (prev === tab ? null : tab));
@@ -87,12 +88,14 @@ const DropdownCards = () => {
 
     return (
         <div className="max-w-6xl mx-auto px-4 py-10">
-            <div className="flex flex-row gap-4 justify-center items-center mb-6">
+            <div className="flex flex-wrap gap-4 justify-center mb-8">
                 {Object.keys(cardData).map((tab) => (
                     <button
                         key={tab}
                         onClick={() => toggleTab(tab)}
-                        className={`px-6 py-3 rounded-full text-white font-semibold transition duration-300 shadow cursor-pointer ${openTab === tab ? 'bg-blue-700' : 'bg-blue-500 hover:bg-blue-600'
+                        className={`px-6 py-2 rounded-full font-medium text-sm transition-all duration-300 shadow-md focus:outline-none hover:cursor-pointer ${openTab === tab
+                                ? 'bg-blue-700 text-white'
+                                : 'bg-blue-100 text-blue-700 hover:bg-blue-200'
                             }`}
                     >
                         {tab}
@@ -100,32 +103,43 @@ const DropdownCards = () => {
                 ))}
             </div>
 
-            {openTab && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 animate-fadeIn">
-                    {cardData[openTab].map((card, idx) => (
-                        <div
-                            key={idx}
-                            className="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-300"
-                        >
-                            <img
-                                src={card.image}
-                                alt={card.title}
-                                className="w-full h-48 object-cover"
-                            />
-                            <div className="p-4 space-y-2 text-center">
-                                <h3 className="text-xl font-bold text-gray-800">{card.title}</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut esse in non. Cum libero aperiam totam incidunt sapiente quod asperiores error ex velit! Voluptatibus eaque quidem quae, quia pariatur iure! Magnam delectus odio nobis doloribus velit in enim culpa maxime.</p>
-                                <button className="mt-2 w-full px-4 py-2 hover:bg-blue-400 hover:text-white rounded-full transition cursor-pointer border-1 border-blue-400 text-blue-600">
-                                    {card.button}
-                                </button>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            )}
+            <AnimatePresence mode="wait">
+                {openTab && (
+                    <motion.div
+                        key={openTab}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 20 }}
+                        transition={{ duration: 0.4 }}
+                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+                    >
+                        {cardData[openTab].map((card, idx) => (
+                            <motion.div
+                                key={idx}
+                                className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition-all duration-300"
+                                whileHover={{ scale: 1.03 }}
+                            >
+                                <img
+                                    src={card.image}
+                                    alt={card.title}
+                                    className="w-full h-48 object-cover"
+                                />
+                                <div className="p-5 space-y-3 text-center">
+                                    <h3 className="text-xl font-semibold text-gray-800">{card.title}</h3>
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        Ready to elevate your skills or empower your team? Book a session and start your journey today.
+                                    </p>
+                                    <button className="w-full px-4 py-2 bg-blue-100 text-blue-700 font-medium rounded-full border border-blue-300 hover:bg-blue-700 hover:text-white transition cursor-pointer">
+                                        {card.button}
+                                    </button>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };
 
 export default DropdownCards;
-
