@@ -18,7 +18,7 @@ const About = () => {
                     {/* Right Content Section */}
                     <div className="md:w-1/2 w-full p-8 md:p-12 bg-white">
                         <h2 className="text-3xl font-bold text-gray-900 mb-2">About</h2>
-                        <h3 className="text-3xl font-extrabold text-[#090937] mb-4">Foreward University</h3>
+                        <h3 className="text-3xl font-extrabold text-[#090937] mb-4">Foreword University</h3>
                         <p className="text-gray-600 mb-6">
                             Foreword: School of Soft Skills brings unique concepts of Soft Skills enhancement to budding learners with the ultimate goal of making soft skills development a part of the education curriculum. Based on modern scientific methods, Foreword offers a plethora of dynamic group activities, case specific guidance, and personal counselling sessions with the Mentor. Sessions are conducted with utmost care and diligence keeping in mind the need of every participant.
                         </p>
