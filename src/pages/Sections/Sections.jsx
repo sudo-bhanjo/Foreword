@@ -67,20 +67,20 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const cardData = {
-    "One on One": [
-        { title: 'Personal Mentoring', image: 'https://img.freepik.com/free-vector/job-interview-conversation_74855-7566.jpg', button: 'Book Now' },
-        { title: '1:1 Coding Session', image: 'https://img.freepik.com/free-vector/flat-design-coworking-illustration_23-2150320193.jpg', button: 'Join Now' },
-        { title: 'Career Coaching', image: 'https://img.freepik.com/free-vector/discussion-concept-illustration_114360-28712.jpg', button: 'Explore' },
-    ],
     Corporate: [
         { title: 'Team Training', image: 'https://img.freepik.com/free-photo/aerial-view-business-team_53876-124515.jpg', button: 'Contact Us' },
         { title: 'Leadership Workshop', image: 'https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15773.jpg', button: 'Enroll' },
         { title: 'Productivity Boost', image: 'https://img.freepik.com/free-photo/business-people-shaking-hands-together_53876-13391.jpg', button: 'Get Quote' },
     ],
+    "One on One": [
+        { title: 'Personal Mentoring', image: 'https://img.freepik.com/free-vector/job-interview-conversation_74855-7566.jpg', button: 'Book Now' },
+        { title: '1:1 Coding Session', image: 'https://img.freepik.com/free-vector/flat-design-coworking-illustration_23-2150320193.jpg', button: 'Join Now' },
+        { title: 'Career Coaching', image: 'https://img.freepik.com/free-vector/discussion-concept-illustration_114360-28712.jpg', button: 'Explore' },
+    ],
 };
 
 const DropdownCards = () => {
-    const [openTab, setOpenTab] = useState("One on One");
+    const [openTab, setOpenTab] = useState("Corporate");
 
     const toggleTab = (tab) => {
         setOpenTab((prev) => (prev === tab ? null : tab));
@@ -94,8 +94,8 @@ const DropdownCards = () => {
                         key={tab}
                         onClick={() => toggleTab(tab)}
                         className={`px-6 py-2 rounded-full font-medium text-sm transition-all duration-300 shadow-md focus:outline-none hover:cursor-pointer ${openTab === tab
-                                ? 'bg-blue-700 text-white'
-                                : 'bg-blue-100 text-blue-700 hover:bg-blue-200'
+                            ? 'bg-blue-700 text-white'
+                            : 'bg-blue-100 text-blue-700 hover:bg-blue-200'
                             }`}
                     >
                         {tab}
