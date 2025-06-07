@@ -20,7 +20,7 @@ const Navbar = () => {
                 {/* Desktop Menu (Moved to right side) */}
                 <ul className="hidden md:flex gap-6 items-center text-sm font-medium text-black ml-auto">
                     <li className="cursor-pointer hover:text-blue-600">
-                        <a href="#">Home</a>
+                        <a href="#">Home9090</a>
                     </li>
                     <li className="cursor-pointer hover:text-blue-600">
                         <a href="#about">About Us</a>
