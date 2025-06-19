@@ -9,6 +9,9 @@ import Home from './pages/Home/Home'
 import Testimonials from './pages/Testimonials/Testimonials'
 import Section from './pages/Sections/Sections'
 import About from './pages/About/About'
+import MissionAndVision from './pages/MissionandVision/MissionAndVision'
+import Corporate from './pages/Corporate/CorporateModule'
+// import IndividualModule from './pages/Individual/Individual'
 
 function App() {
 
@@ -20,6 +23,9 @@ function App() {
       {/* <Methodology /> */}
       {/* <Programs /> */}
       <Section />
+      <MissionAndVision />
+      <Corporate />
+      {/* <IndividualModule /> */}
       <AboutFounder />
       <LogoCarousel />
       <Testimonials />

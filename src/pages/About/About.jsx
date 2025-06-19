@@ -1,5 +1,13 @@
 import React from 'react'
 import aboutImg from '../../assets/about/about.webp'
+import { FaCheckCircle } from "react-icons/fa";
+
+const features = [
+    "Real-world case studies and practical exercises",
+    "Customised modules based on individual/corporate needs",
+    "Post-training support & performance tracking",
+    "Experienced trainers from diverse professional backgrounds",
+];
 
 const About = () => {
     return (
@@ -19,26 +27,24 @@ const About = () => {
                     <div className="md:w-1/2 w-full p-8 md:p-12 bg-white">
                         <h2 className="text-3xl font-bold text-gray-900 mb-2">About</h2>
                         <h3 className="text-3xl font-extrabold text-[#090937] mb-4">Foreword University</h3>
-                        <p className="text-gray-600 mb-6">
-                            Foreword: School of Soft Skills brings unique concepts of Soft Skills enhancement to budding learners with the ultimate goal of making soft skills development a part of the education curriculum. Based on modern scientific methods, Foreword offers a plethora of dynamic group activities, case specific guidance, and personal counselling sessions with the Mentor. Sessions are conducted with utmost care and diligence keeping in mind the need of every participant.
+                        <p className="text-gray-600 mb-3">
+                            At Foreword: School of Soft Skills, we believe that technical knowledge alone is not enough to thrive in today's world.
                         </p>
-                        <button className="hover:bg-transparent bg-blue-600 text-white px-10 py-4 rounded-full font-medium flex items-center gap-2 transition-all duration-300 hover:border-1 hover:border-[#296df4] hover:text-[#296df4] hover:cursor-pointer">
-                            University Overview
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-4 w-4"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth={2}
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                                />
-                            </svg>
-                        </button>
+                        <p className="text-gray-600 mb-3">
+                            Foreword: School of Soft Skills was founded by Amrita RayChaudhury, a communications expert and mentor, with a mission to make soft skills accessible, relevant, and transformative for all. With over a decade of experience in training students, professionals, and teams, Amrita envisioned a platform where individuals could develop not just their resumes, but their presence, confidence, and influence. We help you write your 'foreword'—the beginning of a confident, articulate, and emotionally intelligent you.
+                        </p>
+                        <p className="text-gray-600 mb-3">
+                            From communication and leadership training to interview preparation and HR transformation services, we help you master the human side of success.
+                        </p>
+                        <h2 className="text-2xl font-semibold mb-2 text-gray-800">What Makes Us Different:</h2>
+                        <ul className="list-none space-y-2">
+                            {features.map((feature, index) => (
+                                <li key={index} className="flex items-start text-gray-700">
+                                    <FaCheckCircle className="text-black mt-1 mr-2" />
+                                    <span>{feature}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
             </section>
