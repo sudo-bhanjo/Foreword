@@ -24,9 +24,8 @@ const About = () => {
                     </div>
 
                     {/* Right Content Section */}
-                    <div className="md:w-1/2 w-full p-8 md:p-12 bg-white">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-2">About</h2>
-                        <h3 className="text-3xl font-extrabold text-[#090937] mb-4">Foreword University</h3>
+                    <div className="md:w-1/2 w-full p-8 bg-white">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-2">About us</h2>
                         <p className="text-gray-600 mb-3">
                             At Foreword: School of Soft Skills, we believe that technical knowledge alone is not enough to thrive in today's world.
                         </p>

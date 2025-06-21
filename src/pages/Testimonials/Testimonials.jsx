@@ -113,8 +113,8 @@ const loopTestimonials = [...testimonials, ...testimonials];
 
 const TestimonialCard = () => {
     return (
-        <section className="py-20" id="testimonials">
-            <div className="text-center mb-14">
+        <section id="testimonials">
+            <div className="text-center mb-10">
                 <h2 className="text-4xl font-bold text-gray-800 mt-2">Testimonials</h2>
                 <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
             </div>

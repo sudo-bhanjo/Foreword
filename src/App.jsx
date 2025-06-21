@@ -11,25 +11,29 @@ import Section from './pages/Sections/Sections'
 import About from './pages/About/About'
 import MissionAndVision from './pages/MissionandVision/MissionAndVision'
 import Corporate from './pages/Corporate/CorporateModule'
+import Blog from './pages/Blogs/blogs'
 // import IndividualModule from './pages/Individual/Individual'
 
 function App() {
 
   return (
     <>
-      <Navbar />
-      <Home />
-      <About />
-      {/* <Methodology /> */}
-      {/* <Programs /> */}
-      <Section />
-      <MissionAndVision />
-      <Corporate />
-      {/* <IndividualModule /> */}
-      <AboutFounder />
-      <LogoCarousel />
-      <Testimonials />
-      <Footer />
+      <div className='overflow-x-hidden'>
+        <Navbar />
+        <Home />
+        <About />
+        <MissionAndVision />
+        {/* <Methodology /> */}
+        {/* <Programs /> */}
+        <Section />
+        <Testimonials />
+        <LogoCarousel />
+        <AboutFounder />
+        {/* <Corporate /> */}
+        {/* <IndividualModule /> */}
+        <Blog />
+        <Footer />
+      </div>
     </>
   )
 }
