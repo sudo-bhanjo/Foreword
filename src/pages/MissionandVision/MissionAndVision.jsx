@@ -68,8 +68,8 @@ const AboutSection = () => {
                                 data-aos="fade-up"
                                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-indigo-400"
                             >
-                                <div className="mb-3">{item.icon}</div>
-                                <h3 className="text-xl font-semibold text-indigo-700 mb-2">
+                                <div className="mb-1">{item.icon}</div>
+                                <h3 className="text-xl font-semibold text-indigo-700 mb-1">
                                     {item.title}
                                 </h3>
                                 <p className="text-gray-700 leading-relaxed">{item.content}</p>
@@ -86,7 +86,7 @@ const AboutSection = () => {
                             Core principles that shape our culture and impact
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                         {values.map((value, index) => (
                             <div
                                 key={index}

@@ -188,19 +188,19 @@ const slides = [
         image: img1,
         title: "Empower Your Voice. Elevate Your Workspace Efficiency.",
         description: "Whether you're a student striving to build confidence or an organization aiming to strengthen team dynamics, our expert-led soft skills training empowers both individuals and teams to succeed in today’s fast-paced world.",
-        buttonText: "Get Started"
+        buttonText: "Explore Our Programs"
     },
     {
         image: img2,
         title: "At Foreword: School of Soft Skills, we turn potential into performance.",
         description: "Whether you're a student striving to build confidence or an organization aiming to strengthen team dynamics, our expert-led soft skills training empowers both individuals and teams to succeed in today’s fast-paced world.",
-        buttonText: "Join Now"
+        buttonText: "Book a Free Consultation"
     },
     {
         image: img3,
         title: "Discover your best self with Foreword — where communication, confidence, and culture come together.",
         description: "Whether you're a student striving to build confidence or an organization aiming to strengthen team dynamics, our expert-led soft skills training empowers both individuals and teams to succeed in today’s fast-paced world.",
-        buttonText: "Explore More"
+        buttonText: "Corporate Enquiry"
     },
 ];
 
@@ -237,12 +237,12 @@ const HeroSection = () => {
                     {slides.map((slide, index) => (
                         <section
                             key={index}
-                            className="w-full flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-16 py-12 flex-shrink-0 bg-cover bg-center bg-no-repeat"
+                            className="w-full flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-16 py-2 flex-shrink-0 bg-cover bg-center bg-no-repeat"
                             style={{ backgroundImage: `url(${bgImg})`, minWidth: "100%" }}
                         >
                             {/* Left Content */}
                             <div className="text-center md:text-left w-full md:w-1/2">
-                                <h1 className="text-3xl sm:text-4xl font-bold text-[#173263] mb-4 leading-snug">
+                                <h1 className="text-3xl font-bold text-[#173263] mb-4 leading-snug">
                                     {slide.title.split("\n").map((line, i) => (
                                         <span key={i}>
                                             {line}
@@ -277,28 +277,9 @@ const HeroSection = () => {
             </div>
             <section className="bg-gradient-to-br from-white to-blue-50 py-16 px-6 sm:px-10 md:px-20 text-center md:text-left">
                 <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
-                    {/* Left Text Content */}
-                    <div className="md:w-2/3" data-aos="fade-right">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-[#173263] mb-4 leading-snug">
-                            We provide personalized soft skill development programs
+                        <h2 className="text-3xl font-bold text-[#173263] mb-4 leading-snug">
+                            We provide personalized soft skill development programs for students, professionals, and corporate teams—because how you present, connect, and collaborate defines your success.
                         </h2>
-                        <p className="text-gray-600 text-base sm:text-lg">
-                            For students, professionals, and corporate teams — because how you present, connect, and collaborate defines your success.
-                        </p>
-                    </div>
-
-                    {/* Right CTA Buttons */}
-                    <div className="md:w-1/3 flex flex-col gap-4 w-full" data-aos="fade-left">
-                        <button className="bg-[#296df4] text-white px-6 py-3 rounded-full hover:bg-blue-600 flex items-center justify-center gap-2 transition-all cursor-pointer">
-                            Explore Our Programs <FaArrowRight />
-                        </button>
-                        <button className="border border-[#296df4] text-[#296df4] px-6 py-3 rounded-full hover:bg-[#296df4] hover:text-white flex items-center justify-center gap-2 transition-all cursor-pointer">
-                            Book a Free Consultation <FaArrowRight />
-                        </button>
-                        <button className="bg-gray-200 text-[#173263] px-6 py-3 rounded-full hover:bg-gray-300 flex items-center justify-center gap-2 transition-all cursor-pointer">
-                            Corporate Enquiry <FaArrowRight />
-                        </button>
-                    </div>
                 </div>
             </section>
         </>

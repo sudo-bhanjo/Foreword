@@ -15,10 +15,10 @@ const AboutFounder = () => {
                 className="w-full md:w-1/2 mt-8 md:mt-0"
                 data-aos="fade-right"
             >
-                <h2 className="text-4xl font-semibold text-[#2c5b75] mb-4">
+                <h2 className="text-4xl font-semibold text-[#173263] mb-4">
                     ABOUT THE FOUNDER
                 </h2>
-                <div className="w-20 h-1 bg-[#2c5b75] mb-6" />
+                <div className="w-20 h-1 bg-[#173263] mb-6" />
                 <p className="text-gray-700 text-lg leading-relaxed font-[500] font-serif">
                     Our Mentor, Ms. Amrita Ray Chaudhury (ARC), an Entrepreneur and a member
                     of the Art of Living Foundation, has been mentoring students and
