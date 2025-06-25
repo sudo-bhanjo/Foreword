@@ -255,7 +255,7 @@ const HeroSection = () => {
                                 </p>
                                 <div className="flex justify-center md:justify-start">
                                     <button className="bg-[#296df4] hover:bg-transparent text-white hover:text-[#296df4] px-6 py-3 rounded-full flex items-center gap-2 transition-all relative z-10 overflow-hidden group hover:cursor-pointer">
-                                        <span className="relative z-20 flex items-center gap-2">
+                                        <span className="relative z-20 flex items-center gap-2 text-sm">
                                             {slide.buttonText} <FaArrowUpRightFromSquare />
                                         </span>
                                         <span className="absolute inset-0 rounded-full border border-[#296df4] opacity-0 group-hover:opacity-100 transition-opacity"></span>

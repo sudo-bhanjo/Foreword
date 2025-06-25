@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImg from '../../assets/about/about.webp'
+import aboutImg from '../../assets/about/Aboutus.png'
 import { FaCheckCircle } from "react-icons/fa";
 
 const features = [
