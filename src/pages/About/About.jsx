@@ -12,7 +12,7 @@ const features = [
 const About = () => {
     return (
         <div>
-            <section className="bg-white py-12 px-4 md:px-16" id="about">
+            <section className="bg-white px-4 md:px-16" id="about">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch rounded-3xl shadow-xl overflow-hidden">
                     {/* Left Image Section */}
                     <div className="md:w-1/2 w-full">

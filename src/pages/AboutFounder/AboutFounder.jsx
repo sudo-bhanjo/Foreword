@@ -9,7 +9,7 @@ const AboutFounder = () => {
     }, []);
 
     return (
-        <div className="bg-white py-12 px-6 md:px-16 flex flex-col-reverse md:flex-row items-center justify-between">
+        <div className="bg-white px-6 md:px-16 flex flex-col-reverse md:flex-row items-center justify-between">
             {/* Left Section */}
             <div
                 className="w-full md:w-1/2 mt-8 md:mt-0"

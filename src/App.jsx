@@ -10,7 +10,6 @@ import Testimonials from './pages/Testimonials/Testimonials'
 import Section from './pages/Sections/Sections'
 import About from './pages/About/About'
 import MissionAndVision from './pages/MissionandVision/MissionAndVision'
-import Corporate from './pages/Corporate/CorporateModule'
 import Blog from './pages/Blogs/blogs'
 // import IndividualModule from './pages/Individual/Individual'
 
@@ -29,7 +28,6 @@ function App() {
         <Testimonials />
         <LogoCarousel />
         <AboutFounder />
-        {/* <Corporate /> */}
         {/* <IndividualModule /> */}
         <Blog />
         <Footer />

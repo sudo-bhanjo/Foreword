@@ -119,9 +119,9 @@ const TestimonialCard = () => {
                 <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
             </div>
 
-            <div className="overflow-hidden relative w-full py-10">
+            <div className="overflow-hidden relative w-full">
                 <motion.div
-                    className="flex gap-8 w-max px-6 md:px-14"
+                    className="flex gap-8 w-max px-5"
                     animate={{
                         x: ["0%", "-50%"],
                     }}

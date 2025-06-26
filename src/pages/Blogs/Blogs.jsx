@@ -33,7 +33,7 @@ const loopBlogs = [...blogs, ...blogs];
 
 const BlogSection = () => {
     return (
-        <section id="blogs" className="bg-gradient-to-br from-white to-blue-50 py-16 px-6 sm:px-10 md:px-20">
+        <section id="blogs" className="bg-gradient-to-br from-white to-blue-50 py-5 px-6 sm:px-10 md:px-20">
             <div className="text-center mb-10">
                 <h2 className="text-4xl font-bold text-gray-800">Latest Blogs</h2>
                 <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
