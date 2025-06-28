@@ -10,11 +10,11 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white px-6 py-4 shadow-md w-full sticky top-0 z-50">
+        <nav className="bg-white px-6 py-4 shadow-md w-full fixed top-0 z-50">
             <div className="flex justify-between items-center max-w-7xl mx-auto">
                 {/* Logo */}
                 <div className="flex items-center space-x-2">
-                    <img src={Logo} alt="Logo" className="h-8" />
+                    <img src={Logo} alt="Logo" className="h-12" />
                 </div>
 
                 {/* Desktop Menu (Moved to right side) */}

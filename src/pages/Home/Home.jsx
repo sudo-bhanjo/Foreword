@@ -229,7 +229,7 @@ const HeroSection = () => {
 
     return (
         <>
-            <div className="overflow-hidden w-full">
+            <div className="overflow-hidden w-full pt-20">
                 <div
                     ref={slideRef}
                     className="flex transition-transform duration-700 ease-in-out w-full"
@@ -237,7 +237,7 @@ const HeroSection = () => {
                     {slides.map((slide, index) => (
                         <section
                             key={index}
-                            className="w-full flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-16 py-2 flex-shrink-0 bg-cover bg-center bg-no-repeat"
+                            className="w-full flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-16 flex-shrink-0 bg-cover bg-center bg-no-repeat"
                             style={{ backgroundImage: `url(${bgImg})`, minWidth: "100%" }}
                         >
                             {/* Left Content */}
@@ -268,18 +268,60 @@ const HeroSection = () => {
                                 <img
                                     src={slide.image}
                                     alt={`Slide ${index + 1}`}
-                                    className="w-full max-h-[300px] object-contain"
+                                    className="w-full max-h-[400px] object-contain"
                                 />
                             </div>
                         </section>
                     ))}
                 </div>
             </div>
-            <section className="bg-gradient-to-br from-white to-blue-50 py-16 px-6 sm:px-10 md:px-20 text-center md:text-left">
-                <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
-                        <h2 className="text-3xl font-bold text-[#173263] mb-4 leading-snug">
+            {/* <section className="bg-gradient-to-br from-white to-blue-50 py-16 px-6 sm:px-10 md:px-20">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-stretch justify-between gap-10">
+
+                    <div className="flex items-center md:items-start max-w-3xl">
+                        <h2 className="text-3xl font-bold text-[#173263] leading-snug">
                             We provide personalized soft skill development programs for students, professionals, and corporate teams—because how you present, connect, and collaborate defines your success.
                         </h2>
+                    </div>
+
+                    <div className="flex flex-col justify-center items-center md:items-end gap-4 w-full md:w-auto">
+                        {[
+                            "Explore Our Programs",
+                            "Book a Free Consultation",
+                            "Corporate Enquiry",
+                        ].map((text, i) => (
+                            <button
+                                key={i}
+                                className="group relative overflow-hidden px-6 py-3 w-full md:w-auto rounded-full bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold shadow-lg transition-all duration-300 ease-in-out hover:from-blue-700 hover:to-blue-900 hover:scale-105"
+                            >
+                                <span className="relative z-10">{text}</span>
+                                <span className="absolute inset-0 bg-white opacity-10 transition-opacity group-hover:opacity-20"></span>
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            </section> */}
+            <section className="bg-gradient-to-br from-white to-blue-50 py-16 px-6 sm:px-10 md:px-20 text-center md:text-left">
+                <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+                    {/* Left Text Content */}
+                    <div className="md:w-2/3" data-aos="fade-right">
+                        <h2 className="text-3xl font-bold text-[#173263] mb-4 leading-snug">
+                            We provide personalized soft skill development programs For students, professionals, and corporate teams — because how you present, connect, and collaborate defines your success.
+                        </h2>
+                    </div>
+
+                    {/* Right CTA Buttons */}
+                    <div className="md:w-1/3 flex flex-col gap-4 w-full" data-aos="fade-left">
+                        <button className="bg-[#296df4] text-white px-6 py-3 rounded-full hover:bg-blue-600 flex items-center justify-center gap-2 transition-all cursor-pointer">
+                            Explore Our Programs <FaArrowRight />
+                        </button>
+                        <button className="border border-[#296df4] text-[#296df4] px-6 py-3 rounded-full hover:bg-[#296df4] hover:text-white flex items-center justify-center gap-2 transition-all cursor-pointer">
+                            Book a Free Consultation <FaArrowRight />
+                        </button>
+                        <button className="border border-[#296df4] text-[#296df4] px-6 py-3 rounded-full hover:bg-[#296df4] hover:text-white flex items-center justify-center gap-2 transition-all cursor-pointer">
+                            Corporate Enquiry <FaArrowRight />
+                        </button>
+                    </div>
                 </div>
             </section>
         </>
