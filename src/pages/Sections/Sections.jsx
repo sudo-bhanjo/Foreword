@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const moduleDetails = {
@@ -496,6 +496,19 @@ const cardData = {
 const DropdownCards = () => {
     const [openTab, setOpenTab] = useState("Corporate Training Programs");
     const [selectedCard, setSelectedCard] = useState(null);
+    const scrollRef = useRef();
+
+    const scroll = (direction) => {
+        const container = scrollRef.current;
+        if (container) {
+            const scrollAmount = 300;
+            container.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth',
+            });
+        }
+    };
+
 
     const toggleTab = (tab) => {
         setOpenTab((prev) => (prev === tab ? null : tab));
@@ -503,58 +516,9 @@ const DropdownCards = () => {
 
     const closeModal = () => setSelectedCard(null);
 
-    // return (
-    //     <div className="max-w-6xl mx-auto px-4 py-10">
-    //         <h2 className="text-3xl font-bold text-gray-800 text-center pb-5">Our Services</h2>
-    //         <div className="flex flex-wrap gap-4 justify-center mb-8">
-    //             {Object.keys(cardData).map((tab) => (
-    //                 <button
-    //                     key={tab}
-    //                     onClick={() => toggleTab(tab)}
-    //                     className={`px-6 py-2 rounded-full font-medium text-sm transition-all duration-300 shadow-md focus:outline-none hover:cursor-pointer ${openTab === tab
-    //                         ? 'bg-blue-700 text-white'
-    //                         : 'bg-blue-100 text-blue-700 hover:bg-blue-200'
-    //                         }`}
-    //                 >
-    //                     {tab}
-    //                 </button>
-    //             ))}
-    //         </div>
-
-    //         <AnimatePresence mode="wait">
-    //             {openTab && (
-    //                 <motion.div
-    //                     key={openTab}
-    //                     initial={{ opacity: 0, y: 20 }}
-    //                     animate={{ opacity: 1, y: 0 }}
-    //                     exit={{ opacity: 0, y: 20 }}
-    //                     transition={{ duration: 0.4 }}
-    //                     className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
-    //                 >
-    //                     {cardData[openTab].map((card, idx) => (
-    //                         <motion.div
-    //                             key={idx}
-    //                             className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-[1.03] transition-all duration-300"
-    //                             whileHover={{ scale: 1.03 }}
-    //                         >
-    //                             <img
-    //                                 src={card.image}
-    //                                 alt={card.title}
-    //                                 className="w-full h-48 object-cover"
-    //                             />
-    //                             <div className="p-5 space-y-3 text-center">
-    //                                 <h3 className="text-xl font-semibold text-gray-800">{card.title}</h3>
-    //                             </div>
-    //                         </motion.div>
-    //                     ))}
-    //                 </motion.div>
-    //             )}
-    //         </AnimatePresence>
-    //     </div>
-    // );
     return (
         <div className="max-w-6xl mx-auto px-4 py-10 relative">
-            <h2 className="text-3xl font-bold text-gray-800 text-center pb-2">Our Services</h2>
+            <h2 className="text-3xl font-bold text-[#173263] text-center pb-2">Our Services</h2>
             <div className="w-24 h-1 bg-blue-500 mx-auto rounded mb-5"></div>
             <div className="flex flex-wrap gap-4 justify-center mb-8">
                 {Object.keys(cardData).map((tab) => (
@@ -579,25 +543,74 @@ const DropdownCards = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 20 }}
                         transition={{ duration: 0.4 }}
-                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+                        className="relative"
                     >
-                        {cardData[openTab].map((card, idx) => (
-                            <motion.div
-                                key={idx}
-                                onClick={() => setSelectedCard(card.title)} // 👈 set selected title
-                                className="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:scale-[1.03] transition-all duration-300"
-                                whileHover={{ scale: 1.03 }}
+                        {/* Left Arrow */}
+                        <button
+                            onClick={() => scroll('left')}
+                            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow hover:bg-blue-100 transition hover:cursor-pointer"
+                        >
+                            <svg
+                                className="w-6 h-6 text-blue-700"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                                viewBox="0 0 24 24"
                             >
-                                <img
-                                    src={card.image}
-                                    alt={card.title}
-                                    className="w-full h-48 object-cover"
-                                />
-                                <div className="p-5 text-center space-y-3">
-                                    <h3 className="text-xl font-semibold text-gray-800">{card.title}</h3>
-                                </div>
-                            </motion.div>
-                        ))}
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+
+                        {/* Card Scroll Area */}
+                        <div
+                            ref={scrollRef}
+                            className="overflow-x-auto overflow-y-hidden scrollbar-hide scroll-smooth px-10"
+                        >
+                            <div className="flex gap-6 w-max px-1">
+                                {Array(20)
+                                    .fill(cardData[openTab])
+                                    .flat()
+                                    .map((card, idx) => (
+                                        <motion.div
+                                            key={idx}
+                                            className="bg-white w-[300px] shrink-0 rounded-2xl shadow-lg overflow-hidden transition-all duration-300"
+                                        >
+                                            <img
+                                                src={card.image}
+                                                alt={card.title}
+                                                className="w-full h-48 object-cover"
+                                            />
+                                            <div className="p-5 text-center space-y-3">
+                                                <h3 className="text-xl font-semibold text-gray-800 line-clamp-2 leading-snug h-14" title={card.title}>
+                                                    {card.title}
+                                                </h3>
+                                                <button
+                                                    onClick={() => setSelectedCard(card.title)}
+                                                    className="mt-2 px-4 py-2 text-sm font-medium bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300 hover:cursor-pointer"
+                                                >
+                                                    Read More
+                                                </button>
+                                            </div>
+                                        </motion.div>
+                                    ))}
+                            </div>
+                        </div>
+
+                        {/* Right Arrow */}
+                        <button
+                            onClick={() => scroll('right')}
+                            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow hover:bg-blue-100 transition hover:cursor-pointer"
+                        >
+                            <svg
+                                className="w-6 h-6 text-blue-700"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                                viewBox="0 0 24 24"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
                     </motion.div>
                 )}
             </AnimatePresence>
