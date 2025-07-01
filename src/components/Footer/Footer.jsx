@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import {
     FaFacebookF,
-    FaTwitter,
-    FaLinkedinIn,
     FaInstagram,
-    FaYoutube,
     FaEnvelope,
     FaPhoneAlt,
+    FaWhatsapp,
 } from 'react-icons/fa';
 import { FaArrowUp } from 'react-icons/fa6';
 import Logo from '../../assets/Logo.png';
@@ -49,17 +47,11 @@ const Footer = () => {
                         <a href="https://www.facebook.com/people/Foreword-School-of-Soft-Skills/100063752177327" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
                             <FaFacebookF size={14} />
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                            <FaTwitter size={14} />
-                        </a>
-                        <a href="https://www.linkedin.com/company/forewordarc" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                            <FaLinkedinIn size={14} />
-                        </a>
                         <a href="https://www.instagram.com/foreword.softskills" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
                             <FaInstagram size={14} />
                         </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                            <FaYoutube size={14} />
+                        <a href="https://wa.me/918777411426" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                            <FaWhatsapp size={14} />
                         </a>
                     </div>
                 </div>
