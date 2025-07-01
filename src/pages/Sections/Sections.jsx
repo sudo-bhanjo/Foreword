@@ -493,6 +493,13 @@ const cardData = {
     ],
 };
 
+const tabDescriptions = {
+    "Corporate Training Programs": "Empower your workforce to communicate clearly, collaborate efficiently, and lead with empathy. Foreword’s corporate training programs are customized to align with your team’s goals and business culture.",
+    "Student & Individual Training": "Transform your communication, boost your self-confidence, and prepare for real-world challenges. Our one-on-one and small group coaching programs are designed to help young adults and fresh graduates step into their careers with clarity and charisma.",
+    "HR & Organizational Services": "We partner with organizations to streamline HR systems, redesign internal communication processes, and build a cohesive work culture.",
+    "Institutional Training": "Our campus soft skill training programs help bridge the gap between academic knowledge and employability."
+};
+
 const DropdownCards = () => {
     const [openTab, setOpenTab] = useState("Corporate Training Programs");
     const [selectedCard, setSelectedCard] = useState(null);
@@ -545,6 +552,10 @@ const DropdownCards = () => {
                         transition={{ duration: 0.4 }}
                         className="relative"
                     >
+                        <p className="text-center text-gray-700 mb-6 max-w-5xl mx-auto">
+                            {tabDescriptions[openTab]}
+                        </p>
+
                         {/* Left Arrow */}
                         <button
                             onClick={() => scroll('left')}
