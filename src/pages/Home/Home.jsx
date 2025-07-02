@@ -305,7 +305,7 @@ const HeroSection = () => {
                 <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
                     {/* Left Text Content */}
                     <div className="md:w-2/3" data-aos="fade-right">
-                        <h2 className="text-3xl font-bold text-[#173263] mb-4 leading-snug">
+                        <h2 className="text-3xl font-semibold text-[#173263] mb-4 leading-snug">
                             We provide personalized soft skill development programs For students, professionals, and corporate teams — because how you present, connect, and collaborate defines your success.
                         </h2>
                     </div>

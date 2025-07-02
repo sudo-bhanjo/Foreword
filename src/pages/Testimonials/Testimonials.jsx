@@ -115,8 +115,8 @@ const TestimonialCard = () => {
     return (
         <section id="testimonials">
             <div className="text-center mb-10">
-                <h2 className="text-4xl font-bold text-[#173263] mt-2">Testimonials</h2>
-                <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
+                <h2 className="text-3xl font-semibold text-[#173263] mt-2">Testimonials</h2>
+                <div className="w-24 h-1 bg-blue-500 mx-auto mt-1 rounded"></div>
             </div>
 
             <div className="overflow-hidden relative w-full">

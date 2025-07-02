@@ -525,7 +525,7 @@ const DropdownCards = () => {
 
     return (
         <div className="max-w-6xl mx-auto px-4 py-10 relative">
-            <h2 className="text-3xl font-bold text-[#173263] text-center pb-2">Our Services</h2>
+            <h2 className="text-3xl font-semibold text-[#173263] text-center pb-1">Our Services</h2>
             <div className="w-24 h-1 bg-blue-500 mx-auto rounded mb-5"></div>
             <div className="flex flex-wrap gap-4 justify-center mb-8">
                 {Object.keys(cardData).map((tab) => (

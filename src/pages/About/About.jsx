@@ -25,7 +25,8 @@ const About = () => {
 
                     {/* Right Content Section */}
                     <div className="md:w-1/2 w-full p-8 bg-white">
-                        <h2 className="text-2xl font-semibold text-[#173263] mb-2">About Us</h2>
+                        <h2 className="text-2xl font-semibold text-[#173263] mb-1">About Us</h2>
+                        <div className="w-20 h-1 bg-[#173263] mb-2 mx-0"/>
                         <p className="text-gray-600 mb-3">
                             At Foreword: School of Soft Skills, we believe that technical knowledge alone is not enough to thrive in today's world.
                         </p>
@@ -35,7 +36,8 @@ const About = () => {
                         <p className="text-gray-600 mb-3">
                             From communication and leadership training to interview preparation and HR transformation services, we help you master the human side of success.
                         </p>
-                        <h2 className="text-2xl font-semibold mb-2 text-[#173263]">What Makes Us Different:</h2>
+                        <h2 className="text-2xl font-semibold mb-1 text-[#173263]">What Makes Us Different:</h2>
+                        <div className="w-20 h-1 bg-[#173263] mb-2 mx-0"/>
                         <ul className="list-none space-y-2">
                             {features.map((feature, index) => (
                                 <li key={index} className="flex items-start text-gray-700">

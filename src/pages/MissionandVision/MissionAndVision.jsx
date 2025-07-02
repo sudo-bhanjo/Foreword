@@ -56,7 +56,7 @@ const AboutSection = () => {
                 {/* Mission & Vision (Left Side) */}
                 <div className="w-full lg:w-1/2">
                     <div className="text-center lg:text-left mb-8">
-                        <h2 className="text-3xl font-bold text-[#173263]">Mission & Vision</h2>
+                        <h2 className="text-3xl font-semibold text-[#173263]">Mission & Vision</h2>
                         <div className="w-20 h-1 bg-blue-500 my-2 mx-auto lg:mx-0"/>
                         <p className="text-gray-600 mt-2 text-base sm:text-lg">
                             What drives us forward with purpose and clarity
@@ -82,7 +82,7 @@ const AboutSection = () => {
                 {/* Our Values (Right Side) */}
                 <div className="w-full lg:w-1/2">
                     <div className="text-center lg:text-left mb-8">
-                        <h2 className="text-3xl font-bold text-[#173263]">Our Values</h2>
+                        <h2 className="text-3xl font-semibold text-[#173263]">Our Values</h2>
                         <div className="w-20 h-1 bg-blue-500 my-2 mx-auto lg:mx-0"/>
                         <p className="text-gray-600 mt-2 text-base sm:text-lg">
                             Core principles that shape our culture and impact

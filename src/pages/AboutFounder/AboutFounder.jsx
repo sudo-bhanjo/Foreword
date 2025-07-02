@@ -15,7 +15,7 @@ const AboutFounder = () => {
                 className="w-full md:w-1/2 mt-8 md:mt-0"
                 data-aos="fade-right"
             >
-                <h2 className="text-4xl font-semibold text-[#173263] mb-4">
+                <h2 className="text-3xl font-semibold text-[#173263] mb-2">
                     About The Founder
                 </h2>
                 <div className="w-20 h-1 bg-[#173263] mb-6" />

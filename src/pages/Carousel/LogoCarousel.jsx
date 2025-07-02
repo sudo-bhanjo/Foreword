@@ -67,10 +67,10 @@ const PartnerLogos = () => {
     return (
         <section className="bg-white py-16 px-4 overflow-hidden" id="partner">
             <div className="max-w-7xl mx-auto text-center">
-                <h2 className="text-3xl font-bold text-[#173263]">
+                <h2 className="text-3xl font-semibold text-[#173263]">
                     Our Corporate Collaborations
                 </h2>
-                <div className="w-24 h-1 bg-blue-500 mx-auto mt-3 mb-12 rounded"></div>
+                <div className="w-24 h-1 bg-blue-500 mx-auto mt-1 mb-12 rounded"></div>
 
                 {/* Scrolling logos */}
                 <div className="relative overflow-hidden w-full">
