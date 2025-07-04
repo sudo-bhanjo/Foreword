@@ -196,14 +196,14 @@ const slides = [
         title: "At Foreword: School of Soft Skills, we turn potential into performance.",
         description: "Whether you're a student striving to build confidence or an organization aiming to strengthen team dynamics, our expert-led soft skills training empowers both individuals and teams to succeed in today’s fast-paced world.",
         buttonText: "Book a Free Consultation",
-        link: "#"
+        link: "https://wa.link/gpcdz6"
     },
     {
         image: img3,
         title: "Discover your best self with Foreword — where communication, confidence, and culture come together.",
         description: "Whether you're a student striving to build confidence or an organization aiming to strengthen team dynamics, our expert-led soft skills training empowers both individuals and teams to succeed in today’s fast-paced world.",
         buttonText: "Corporate Enquiry",
-        link: "#"
+        link: "https://wa.link/gpcdz6"
     },
 ];
 
@@ -318,12 +318,12 @@ const HeroSection = () => {
                         <a href='#programs' className="bg-[#296df4] text-white px-6 py-3 rounded-full hover:bg-blue-600 flex items-center justify-center gap-2 transition-all cursor-pointer">
                             Explore Our Programs <FaArrowRight />
                         </a>
-                        <button className="border border-[#296df4] text-[#296df4] px-6 py-3 rounded-full hover:bg-[#296df4] hover:text-white flex items-center justify-center gap-2 transition-all cursor-pointer">
+                        <a href="https://wa.link/gpcdz6" className="border border-[#296df4] text-[#296df4] px-6 py-3 rounded-full hover:bg-[#296df4] hover:text-white flex items-center justify-center gap-2 transition-all cursor-pointer">
                             Book a Free Consultation <FaArrowRight />
-                        </button>
-                        <button className="border border-[#296df4] text-[#296df4] px-6 py-3 rounded-full hover:bg-[#296df4] hover:text-white flex items-center justify-center gap-2 transition-all cursor-pointer">
+                        </a>
+                        <a href="https://wa.link/gpcdz6" className="border border-[#296df4] text-[#296df4] px-6 py-3 rounded-full hover:bg-[#296df4] hover:text-white flex items-center justify-center gap-2 transition-all cursor-pointer">
                             Corporate Enquiry <FaArrowRight />
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
