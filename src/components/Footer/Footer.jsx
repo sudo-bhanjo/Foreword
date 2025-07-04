@@ -59,7 +59,7 @@ const Footer = () => {
                 </div>
 
                 {/* About */}
-                <div>
+                {/* <div>
                     <h4 className="font-bold text-[#0a0d3b] mb-4">Resources</h4>
                     <ul className="space-y-2 text-sm">
                         <li><a href="#" className="hover:underline">Home</a></li>
@@ -68,17 +68,17 @@ const Footer = () => {
                         <li><a href="#partner" className="hover:underline">Partner</a></li>
                         <li><a href="#testimonials" className="hover:underline">Testimonials</a></li>
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Resources */}
-                <div>
+                {/* <div>
                     <h4 className="font-bold text-[#0a0d3b] mb-4">About us</h4>
                     <ul className="space-y-2 text-sm">
                         {['Support Center', 'Affiliate', 'Careers', 'Sitemap', 'Help Center'].map((item, i) => (
                             <li key={i} className="hover:underline cursor-pointer"><a href="#">{item}</a></li>
                         ))}
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Contact */}
                 <div>

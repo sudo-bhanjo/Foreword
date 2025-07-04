@@ -93,7 +93,7 @@ const PartnerLogos = () => {
                                 <img
                                     src={logo.src}
                                     alt={logo.alt}
-                                    className="h-14 w-auto object-contain grayscale hover:grayscale-0 transition"
+                                    className="h-10 w-auto object-contain transition"
                                 />
                             </div>
                         ))}
