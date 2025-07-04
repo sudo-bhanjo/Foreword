@@ -5,6 +5,7 @@ import {
     FaEnvelope,
     FaPhoneAlt,
     FaWhatsapp,
+    FaLinkedinIn,
 } from 'react-icons/fa';
 import { FaArrowUp } from 'react-icons/fa6';
 import Logo from '../../assets/Logo.png';
@@ -30,28 +31,29 @@ const Footer = () => {
 
             {/* Main Footer Grid */}
             <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pt-10">
-
+        
                 {/* Brand */}
                 <div>
                     <div className="flex items-center gap-2 mb-4">
                         <img src={Logo} alt="Logo" className="w-40" />
                     </div>
                     <p className="text-sm leading-relaxed">
-                        Welcome to the world of education,<br />
-                        Where knowledge unlocks endless<br />
-                        possibilities! societies.
+                        Shaping confident individuals and <br /> cohesive teams through impactful soft skills training.
                     </p>
 
                     <h4 className="text-md font-bold mt-6 mb-2 text-[#0a0d3b]">Follow us</h4>
                     <div className="flex gap-3">
-                        <a href="https://www.facebook.com/people/Foreword-School-of-Soft-Skills/100063752177327" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                            <FaFacebookF size={14} />
+                        <a href="https://wa.link/gpcdz6" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                            <FaWhatsapp size={14} />
+                        </a>
+                        <a href="https://www.linkedin.com/company/forewordarc/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition" >
+                            <FaLinkedinIn size={14} />
                         </a>
                         <a href="https://www.instagram.com/foreword.softskills" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
                             <FaInstagram size={14} />
                         </a>
-                        <a href="https://wa.me/918777411426" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                            <FaWhatsapp size={14} />
+                        <a href="https://www.facebook.com/people/Foreword-School-of-Soft-Skills/100063752177327" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                            <FaFacebookF size={14} />
                         </a>
                     </div>
                 </div>
@@ -97,10 +99,10 @@ const Footer = () => {
             {/* Footer Bottom Bar */}
             <div className="mt-10 border-t pt-4 px-4 flex flex-col md:flex-row justify-evenly items-center text-sm text-[#0a0d3b]">
                 <p>&copy; 2025 - Foreword, Developed by Simtrak Solutions</p>
-                <div className="flex gap-4 mt-2 md:mt-0">
+                {/* <div className="flex gap-4 mt-2 md:mt-0">
                     <a href="#" className="hover:underline">Privacy Policy</a>
                     <a href="#" className="hover:underline">Terms & Conditions</a>
-                </div>
+                </div> */}
             </div>
 
             {/* Back to top button */}

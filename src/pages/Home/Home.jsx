@@ -188,19 +188,22 @@ const slides = [
         image: img1,
         title: "Empower Your Voice. Elevate Your Workspace Efficiency.",
         description: "Whether you're a student striving to build confidence or an organization aiming to strengthen team dynamics, our expert-led soft skills training empowers both individuals and teams to succeed in today’s fast-paced world.",
-        buttonText: "Explore Our Programs"
+        buttonText: "Explore Our Programs",
+        link: "#programs"
     },
     {
         image: img2,
         title: "At Foreword: School of Soft Skills, we turn potential into performance.",
         description: "Whether you're a student striving to build confidence or an organization aiming to strengthen team dynamics, our expert-led soft skills training empowers both individuals and teams to succeed in today’s fast-paced world.",
-        buttonText: "Book a Free Consultation"
+        buttonText: "Book a Free Consultation",
+        link: "#"
     },
     {
         image: img3,
         title: "Discover your best self with Foreword — where communication, confidence, and culture come together.",
         description: "Whether you're a student striving to build confidence or an organization aiming to strengthen team dynamics, our expert-led soft skills training empowers both individuals and teams to succeed in today’s fast-paced world.",
-        buttonText: "Corporate Enquiry"
+        buttonText: "Corporate Enquiry",
+        link: "#"
     },
 ];
 
@@ -254,12 +257,12 @@ const HeroSection = () => {
                                     {slide.description}
                                 </p>
                                 <div className="flex justify-center md:justify-start">
-                                    <button className="bg-[#296df4] hover:bg-transparent text-white hover:text-[#296df4] px-6 py-3 rounded-full flex items-center gap-2 transition-all relative z-10 overflow-hidden group hover:cursor-pointer">
+                                    <a href={slide.link} className="bg-[#296df4] hover:bg-transparent text-white hover:text-[#296df4] px-6 py-3 rounded-full flex items-center gap-2 transition-all relative z-10 overflow-hidden group hover:cursor-pointer">
                                         <span className="relative z-20 flex items-center gap-2 text-sm">
                                             {slide.buttonText} <FaArrowUpRightFromSquare />
                                         </span>
                                         <span className="absolute inset-0 rounded-full border border-[#296df4] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
 
@@ -312,9 +315,9 @@ const HeroSection = () => {
 
                     {/* Right CTA Buttons */}
                     <div className="md:w-1/3 flex flex-col gap-4 w-full" data-aos="fade-left">
-                        <button className="bg-[#296df4] text-white px-6 py-3 rounded-full hover:bg-blue-600 flex items-center justify-center gap-2 transition-all cursor-pointer">
+                        <a href='#programs' className="bg-[#296df4] text-white px-6 py-3 rounded-full hover:bg-blue-600 flex items-center justify-center gap-2 transition-all cursor-pointer">
                             Explore Our Programs <FaArrowRight />
-                        </button>
+                        </a>
                         <button className="border border-[#296df4] text-[#296df4] px-6 py-3 rounded-full hover:bg-[#296df4] hover:text-white flex items-center justify-center gap-2 transition-all cursor-pointer">
                             Book a Free Consultation <FaArrowRight />
                         </button>

@@ -18,8 +18,8 @@ const AboutFounder = () => {
                 <h2 className="text-3xl font-semibold text-[#173263] mb-2">
                     About The Founder
                 </h2>
-                <div className="w-20 h-1 bg-[#173263] mb-6" />
-                <p className="text-gray-700 text-lg leading-relaxed font-[500]">
+                <div className="w-20 h-1 bg-blue-500 mb-6" />
+                <p className="text-gray-600 text-lg leading-relaxed">
                     Our Mentor, Ms. Amrita Ray Chaudhury (ARC), an Entrepreneur and a member
                     of the Art of Living Foundation, has been mentoring students and
                     professionals in the field of Soft Skills Development for many years.
