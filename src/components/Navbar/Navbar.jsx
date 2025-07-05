@@ -32,6 +32,9 @@ const Navbar = () => {
                         <a href="#partner">Partner</a>
                     </li>
                     <li className="cursor-pointer hover:text-blue-600">
+                        <a href="#blogs">Blogs</a>
+                    </li>
+                    <li className="cursor-pointer hover:text-blue-600">
                         <a href="#testimonials">Testimonials</a>
                     </li>
                 </ul>
@@ -50,7 +53,7 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
                 <div className="md:hidden px-4 py-4 mt-2 space-y-4 rounded">
-                    <ul className="space-y-2 text-sm font-medium">
+                    <ul className="space-y-5 text-sm font-medium">
                         <li className="cursor-pointer" onClick={handleMenuItemClick}>
                             <a href="#">Home</a>
                         </li>
@@ -62,6 +65,9 @@ const Navbar = () => {
                         </li>
                         <li className="cursor-pointer" onClick={handleMenuItemClick}>
                             <a href="#partner">Partner</a>
+                        </li>
+                        <li className="cursor-pointer" onClick={handleMenuItemClick}>
+                            <a href="#blogs">Blogs</a>
                         </li>
                         <li className="cursor-pointer" onClick={handleMenuItemClick}>
                             <a href="#testimonials">Testimonials</a>
