@@ -12,27 +12,27 @@ import About from './pages/About/About'
 import MissionAndVision from './pages/MissionandVision/MissionAndVision'
 import Blog from './pages/Blogs/blogs'
 // import IndividualModule from './pages/Individual/Individual'
-// import Error from "./pages/InternalServer/InternalServerError"
+import Error from "./pages/InternalServer/InternalServerError"
 
 function App() {
 
   return (
     <>
       <div className='overflow-x-hidden'>
-        <Navbar />
+        {/* <Navbar />
         <Home />
         <About />
-        <MissionAndVision />
+        <MissionAndVision /> */}
         {/* <Methodology /> */}
         {/* <Programs /> */}
-        <Section />
+        {/* <Section />
         <Testimonials />
         <LogoCarousel />
-        <AboutFounder />
+        <AboutFounder /> */}
         {/* <IndividualModule /> */}
-        <Blog />
-        <Footer />
-        {/* <Error /> */}
+        {/* <Blog />
+        <Footer /> */}
+        <Error />
       </div>
     </>
   )
