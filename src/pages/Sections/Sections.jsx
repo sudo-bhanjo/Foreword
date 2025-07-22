@@ -527,7 +527,7 @@ const DropdownCards = () => {
         <div className="max-w-6xl mx-auto px-4 py-10 relative" id='programs'>
             <h2 className="text-3xl font-semibold text-[#173263] text-center pb-1">Our Services</h2>
             <div className="w-24 h-1 bg-blue-500 mx-auto rounded mb-5"></div>
-            <div className="flex flex-wrap gap-4 justify-center mb-8">
+            {/* <div className="flex flex-wrap gap-4 justify-center mb-8">
                 {Object.keys(cardData).map((tab) => (
                     <button
                         key={tab}
@@ -535,6 +535,20 @@ const DropdownCards = () => {
                         className={`px-6 py-2 rounded-full font-medium text-sm transition-all duration-300 shadow-md focus:outline-none hover:cursor-pointer ${openTab === tab
                             ? 'bg-blue-700 text-white'
                             : 'bg-blue-100 text-blue-700 hover:bg-blue-200'
+                            }`}
+                    >
+                        {tab}
+                    </button>
+                ))}
+            </div> */}
+            <div className="grid grid-cols-2 sm:flex gap-3 justify-center mb-8">
+                {Object.keys(cardData).map((tab) => (
+                    <button
+                        key={tab}
+                        onClick={() => toggleTab(tab)}
+                        className={`px-6 py-2 rounded-full font-medium text-sm transition-all duration-300 shadow-md focus:outline-none hover:cursor-pointer ${openTab === tab
+                                ? 'bg-blue-700 text-white'
+                                : 'bg-blue-100 text-blue-700 hover:bg-blue-200'
                             }`}
                     >
                         {tab}

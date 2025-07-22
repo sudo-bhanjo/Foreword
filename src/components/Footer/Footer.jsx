@@ -90,7 +90,7 @@ const Footer = () => {
                         </div>
                         <div className="flex items-center gap-2">
                             <FaPhoneAlt className="text-blue-600" />
-                            <span>(+91) 86970 03660</span>
+                            <span>(+91) 98755 21717, (+91) 86970 03660</span>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ const Footer = () => {
 
             {/* Footer Bottom Bar */}
             <div className="mt-10 border-t pt-4 px-4 flex flex-col md:flex-row justify-evenly items-center text-sm text-[#0a0d3b]">
-                <p>&copy; 2025 - Foreword, Developed by Simtrak Solutions</p>
+                <p>&copy; 2025 - Foreword, Developed by <a href="https://simtrak.in/" target='_blank' className='hover:underline'>Simtrak Solutions</a></p>
                 {/* <div className="flex gap-4 mt-2 md:mt-0">
                     <a href="#" className="hover:underline">Privacy Policy</a>
                     <a href="#" className="hover:underline">Terms & Conditions</a>
